@@ -22,13 +22,13 @@ API_HASH = os.environ.get("API_HASH", "4dd1e00d9d977f74435a83927273feba")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002266490060"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5408428203"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7023006442"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://octaviablodrein4:HqiDoSQTlxpGz9ge@cluster0.xrb8n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://celineabuanja:rf7e62IEfuqImsRM@cluster0.ekh9t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7023006442").split()):
+    for x in (os.environ.get("ADMINS", "5408428203").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -61,7 +61,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(5408428203)
+ADMINS.append(7023006442)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
